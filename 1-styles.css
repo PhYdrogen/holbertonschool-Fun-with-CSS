@@ -1,0 +1,24 @@
+a {
+  color: #a91c3c;
+  text-decoration: none;
+  display: inline;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+
+}
+
+a::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: -4px;
+  left: 60px;
+  height: 2px;
+  width: 17%;
+  background-color: #a91c3c;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom left;
+  transform: scaleX(0);
+}
