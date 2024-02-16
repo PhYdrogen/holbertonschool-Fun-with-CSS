@@ -1,0 +1,53 @@
+input {
+  display: none;
+}
+.toggle {
+  margin: 3rem;
+}
+
+.toggle-inner {
+  padding: 2px;
+  border: 2px solid #cfcfcf;
+  border-radius: 80px;
+  width: 70px;
+  height: 20px;
+  background-color: #e1013c;
+}
+
+.toggle-inner::before {
+  padding-left: 12px;
+  content: "Yes";
+  color: #ffff;
+}
+
+.toggle-inner::after {
+  content: "No";
+  color: #e1013c;
+}
+
+.toggle-switch {
+  top: -35px;
+  right: -50px;
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  background-color: white;
+  border: 2px solid #c3c3c3;
+  position: relative;
+}
+
+.toggle-cb:checked ~ .toggle-label .toggle-switch {
+  right: 0;
+  left: -20px;
+}
+
+.toggle-cb:checked ~ .toggle-label .toggle-inner {
+  background-color: #e7e7e7;
+}
+
+.toggle-cb:checked ~ .toggle-label .toggle-inner::before {
+  color: #e7e7e7;
+}
+.toggle-cb:checked ~ .toggle-label .toggle-inner::after {
+  color: #aaaa;
+}
